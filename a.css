@@ -1,0 +1,90 @@
+h1 {
+  color:#f8ac59;
+  text-align:center;
+  font-size:70px;
+  background-color:rgb(8,89,125);
+}
+
+
+h2 {
+  text-align:center;
+  color:rgb(8,89,125);
+}
+
+hr{
+  border: solid 10px #f8ac59; 
+  margin:100px;
+}
+
+#box{
+  text-align:center;
+  font-size: 70px;
+  font-weight:bold;
+  color: rgb(8,89,125);
+}
+
+.for_padding{
+  padding:30px;
+}
+
+canvas { 
+  background: #c1e5ef; display: block; margin: 0 auto; 
+  cursor: url('cursor.png') 10 10,auto;
+}
+
+body{background-color:#c1e5ef}
+
+.change_before{
+  background-color:#c1e5ef;
+  transition-property:background-color;
+  transition-timing-function:linear;
+  transition-delay:0s;
+  transition-duration:.7s;
+}
+
+.change_before:hover{
+  background-color:	#ccd2ff;
+}
+
+.change_pic_before{
+  transition-timing-function:linear;
+  transition-delay:2s;
+  transition-duration:2s;
+  transition-property:width;
+  transition:transform 1s;
+  text-align:center;
+}
+
+.change_pic_before:hover{
+  transform:rotate(360deg);
+}
+
+.for_align{
+  text-align:center;
+}
+
+@-webkit-keyframes bounce {
+    0%{
+        bottom: -500px; left:0px;
+    }
+    30%{
+      bottom:-450px;left:50px; transform:scale(1.1);
+    }
+    60%{
+      bottom:-400px;left:100px; transform:scale(1.2);
+    }
+    90%{
+      bottom:-350px;left:700px; transform:scale(1.4);
+    }
+    100%{
+        bottom:0px;left: -1000px; transform:scale(1.0);
+    }
+}
+#schedule {
+    position: absolute;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: bounce;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode:both
+}
